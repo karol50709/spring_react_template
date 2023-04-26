@@ -1,17 +1,16 @@
-import React, {useEffect} from 'react';
-import './App.css';
-import { getHelloObject} from "./api/example.api";
+import React, { useEffect } from 'react'
+import './App.css'
+import { getHelloObject } from './api/example.api'
 
-function App() {
-
-    useEffect(() => {
-        getHelloObject().then(value => console.log(value))
-    }, [])
+function App (): any {
+  useEffect(() => {
+    void getHelloObject().then(value => { console.log(value) })
+  }, [])
 
   return (
-    <div className="App">
-    </div>
-  );
+        <div className="App">
+        </div>
+  )
 }
 
-export default App;
+export default App
