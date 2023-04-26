@@ -24,9 +24,4 @@ public class TemplateApplication {
         return new HelloObject();
     }
 
-    @Getter
-    class HelloObject{
-        String text = "Hello World";
-    }
-
 }
